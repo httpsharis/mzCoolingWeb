@@ -32,10 +32,10 @@ const Navbar = () => {
             className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav shadow-md' : 'bg-white/90 backdrop-blur-sm border-b border-transparent'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
                 <div className="flex justify-between h-20 items-center">
                     {/* Logo */}
-                    <a href="#home" className="flex-shrink-0 flex items-center gap-2 group" aria-label="MZ Cooling Tower Home">
+                    <a href="#home" className="shrink-0 flex items-center gap-2 group" aria-label="MZ Cooling Tower Home">
                         <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
                             <Snowflake className="w-6 h-6" />
                         </div>
@@ -46,18 +46,18 @@ const Navbar = () => {
                     </a>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex space-x-8 items-center">
+                    <div className="hidden md:flex space-x-16 items-center">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-slate-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600"
+                                className="text-base font-bold text-slate-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600"
                             >
                                 {link.name}
                             </a>
                         ))}
                         <a href="#contact" className="px-6 py-2.5 rounded-full bg-brand-600 text-white text-sm font-bold hover:bg-brand-700 transition-all shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 transform hover:-translate-y-0.5">
-                            Get a Quote
+                            Contact Us
                         </a>
                     </div>
 
