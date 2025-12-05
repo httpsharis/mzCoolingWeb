@@ -40,7 +40,7 @@ const Navbar = () => {
                             <Snowflake className="w-6 h-6" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="font-display font-bold text-xl text-slate-900 leading-none tracking-tight">MZ</span>
+                            <span className="font-display font-bold text-xl text-zinc-900 leading-none tracking-tight">MZ</span>
                             <span className="text-[10px] font-bold text-brand-600 tracking-[0.2em] uppercase">Cooling Tower</span>
                         </div>
                     </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-base font-bold text-slate-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600"
+                                className="text-base font-bold text-zinc-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600"
                             >
                                 {link.name}
                             </a>
@@ -65,7 +65,7 @@ const Navbar = () => {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={toggleMenu}
-                            className="text-slate-900 focus:outline-none p-2 rounded-md hover:bg-slate-100 transition-colors"
+                            className="text-zinc-900 focus:outline-none p-2 rounded-md hover:bg-zinc-100 transition-colors"
                             aria-label="Toggle menu"
                         >
                             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -82,7 +82,7 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="block px-3 py-3 text-base font-medium text-slate-900 hover:bg-brand-50 rounded-lg"
+                                className="block px-3 py-3 text-base font-medium text-zinc-900 hover:bg-brand-50 rounded-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {link.name}

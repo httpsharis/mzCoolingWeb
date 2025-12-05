@@ -11,7 +11,7 @@ const Contact = React.lazy(() => import('./components/sections/Contact'));
 
 function App() {
   return (
-    <div className="font-sans text-slate-600 antialiased selection:bg-brand-500 selection:text-white bg-white">
+    <div className="font-sans text-zinc-600 antialiased selection:bg-brand-500 selection:text-white bg-white">
       <Navbar />
       <main>
         <Hero />

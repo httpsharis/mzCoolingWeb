@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-slate-950 text-slate-400 border-t border-slate-900 pt-16 pb-8">
+            <footer className="bg-zinc-950 text-zinc-400 border-t border-zinc-900 pt-16 pb-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                         <div>
@@ -22,13 +22,13 @@ const Footer = () => {
                                 Delivering excellence in industrial cooling solutions since 2003. Certified quality, energy efficiency, and unmatched durability.
                             </p>
                             <div className="flex gap-4">
-                                <a href="#" className="w-8 h-8 rounded bg-slate-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Facebook">
+                                <a href="#" className="w-8 h-8 rounded bg-zinc-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Facebook">
                                     <Facebook className="w-4 h-4" />
                                 </a>
-                                <a href="#" className="w-8 h-8 rounded bg-slate-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Linkedin">
+                                <a href="#" className="w-8 h-8 rounded bg-zinc-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Linkedin">
                                     <Linkedin className="w-4 h-4" />
                                 </a>
-                                <a href="#" className="w-8 h-8 rounded bg-slate-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Twitter">
+                                <a href="#" className="w-8 h-8 rounded bg-zinc-900 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Twitter">
                                     <Twitter className="w-4 h-4" />
                                 </a>
                             </div>
@@ -75,7 +75,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                    <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
                         <p>© 2024 MZ Cooling Tower. All rights reserved.</p>
                         <div className="flex gap-6">
                             <a href="#" className="hover:text-white">Privacy Policy</a>
