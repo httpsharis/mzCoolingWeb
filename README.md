@@ -1,16 +1,55 @@
-# React + Vite
+# MZ Cooling Tower - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance corporate website for **MZ Cooling Tower**, a leading provider of industrial cooling solutions in Pakistan. This project showcases the company's product range, services, and expertise through a sleek, responsive user interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Visit Website](https://mz-cooling-web.vercel.app/)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Modern UI/UX**: Designed with a professional Red, Black, and White color scheme.
+- **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
+- **Product Catalog**: Dedicated pages for Cooling Towers (Bottle, Rectangular, Mini) and Accessories.
+- **Interactive Elements**: Smooth animations, counting statistics, and hover effects.
+- **Performance**: Optimized with code-splitting and lazy loading for fast load times.
+- **SEO Friendly**: Includes meta tags, Open Graph support, and sitemap.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: [React](https://react.dev/) (v19)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: Vercel
+
+## 📦 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/mzCoolingWeb.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd mzCoolingWeb
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📄 License
+
+This project is proprietary and developed for MZ Cooling Tower.
