@@ -1,7 +1,8 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import RactangleCooler from "../../assets/ractangularCooler.png";
 import CircularCooler from "../../assets/CircularCooler.png";
-import SquareCooler from "../../assets/squareCooler.jpg";
+import MiniCooler from "../../assets/miniCircularTower.png";
 
 const Products = () => {
     return (
@@ -75,18 +76,18 @@ const Products = () => {
                         <div className="aspect-4/3 bg-zinc-200 overflow-hidden relative">
                             <div className="absolute inset-0 bg-zinc-900/0 group-hover:bg-zinc-900/20 transition-colors z-10"></div>
                             <img
-                                src={SquareCooler}
+                                src={MiniCooler}
                                 loading="lazy"
-                                alt="Square Type Cooling Tower"
+                                alt="Mini Bottle Type Cooling Tower"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                             />
                         </div>
                         <div className="p-6 flex flex-col grow">
                             <h3 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-brand-600 transition-colors">
-                                Square Cooling Tower
+                                Mini Bottle Type Cooling Tower
                             </h3>
                             <p className="text-zinc-600 mb-4 text-sm leading-relaxed grow">
-                                Durable square design for efficient cooling in various industrial settings.
+                                Compact and efficient cooling solution for smaller industrial applications and commercial use.
                             </p>
                             <a href="#contact" className="inline-flex items-center text-brand-600 font-semibold text-sm group/link">
                                 Get Specifications <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
@@ -94,8 +95,15 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
+
+
+                <div className="mt-16 text-center">
+                    <Link to="/products" className="inline-flex items-center gap-2 px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-lg shadow-brand-900/20 transition-all hover:-translate-y-1">
+                        See More Products <ArrowRight className="w-5 h-5" />
+                    </Link>
+                </div>
             </div>
-        </section>
+        </section >
     );
 };
 
