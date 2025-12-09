@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Zap } from 'lucide-react';
+import AboutImage from '../../assets/about.jpg';
 
 const About = () => {
     return (
@@ -9,7 +10,7 @@ const About = () => {
                     <div className="relative order-2 lg:order-1">
                         <div className="aspect-square rounded-3xl overflow-hidden bg-zinc-100 relative z-10 shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                src={AboutImage}
                                 loading="lazy"
                                 alt="MZ Cooling Tower manufacturing facility in Lahore"
                                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
