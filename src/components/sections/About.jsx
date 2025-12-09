@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, Zap } from 'lucide-react';
-import AboutImage from '../../assets/about.jpg';
+import AboutImage from '../../assets/about.png';
 
 const About = () => {
     return (
