@@ -11,9 +11,9 @@ const Contact = React.lazy(() => import('../components/sections/Contact'));
 
 const Home = () => {
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main>
+            <main className="grow">
                 <Hero />
                 <Suspense fallback={<div className="h-96 flex items-center justify-center">Loading...</div>}>
                     <About />
@@ -23,7 +23,7 @@ const Home = () => {
                 </Suspense>
             </main>
             <Footer />
-        </>
+        </div>
     );
 };
 

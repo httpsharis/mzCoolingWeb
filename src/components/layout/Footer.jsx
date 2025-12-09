@@ -1,5 +1,5 @@
-import React from 'react';
 import { Snowflake, Facebook, Linkedin, Twitter, MapPin, Phone, Mail, ArrowUp } from 'lucide-react';
+import MZLogo from '../../assets/mzLogo.png';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -13,8 +13,8 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                         <div>
                             <div className="flex items-center gap-2 mb-6">
-                                <div className="w-8 h-8 bg-brand-600 rounded flex items-center justify-center text-white">
-                                    <Snowflake className="w-5 h-5" />
+                                <div className="w-12 h-12 flex items-center justify-center">
+                                    <img src={MZLogo} alt="MZ Logo" className="w-full h-full object-contain" />
                                 </div>
                                 <span className="text-white font-display font-bold text-lg">MZ Cooling Tower</span>
                             </div>
@@ -60,16 +60,16 @@ const Footer = () => {
                             <h5 className="text-white font-bold mb-6">Contact Info</h5>
                             <ul className="space-y-4 text-sm">
                                 <li className="flex items-start gap-3">
-                                    <MapPin className="w-5 h-5 text-brand-500 flex-shrink-0" />
+                                    <MapPin className="w-5 h-5 text-brand-500 shrink-0" />
                                     <span>Main Ferozpur Road Bank Stop 2Km, Ashiyana Road, Lahore</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Phone className="w-5 h-5 text-brand-500 flex-shrink-0" />
-                                    <span>+92-321-4792393</span>
+                                    <Phone className="w-5 h-5 text-brand-500 shrink-0" />
+                                    <span>+923214792393, +923014792393</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <Mail className="w-5 h-5 text-brand-500 flex-shrink-0" />
-                                    <span>info@mzcoolingtower.com.pk</span>
+                                    <Mail className="w-5 h-5 text-brand-500 shrink-0" />
+                                    <span>mzcoolingtower@gmail.com</span>
                                 </li>
                             </ul>
                         </div>

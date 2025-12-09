@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import RactangleCooler from "../../assets/ractangularCooler.png";
 import CircularCooler from "../../assets/CircularCooler.png";
-import MiniCooler from "../../assets/miniCircularTower.png";
+
 
 const Products = () => {
     return (
@@ -71,39 +71,23 @@ const Products = () => {
                         </div>
                     </div>
 
-                    {/* Product 3 */}
-                    <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-brand-900/10 transition-all duration-300 border border-zinc-200/60 flex flex-col h-full">
-                        <div className="aspect-4/3 bg-zinc-200 overflow-hidden relative">
-                            <div className="absolute inset-0 bg-zinc-900/0 group-hover:bg-zinc-900/20 transition-colors z-10"></div>
-                            <img
-                                src={MiniCooler}
-                                loading="lazy"
-                                alt="Mini Bottle Type Cooling Tower"
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                            />
+                    {/* See More Card */}
+                    <Link to="/products" className="group bg-brand-600 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-brand-900/20 transition-all duration-300 border border-brand-500/60 flex flex-col h-full relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-brand-500 to-brand-700 opacity-90 transition-opacity"></div>
+                        <div className="relative z-10 flex flex-col items-center justify-center p-8 h-full text-center text-white grow">
+                            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <ArrowRight className="w-8 h-8" />
+                            </div>
+                            <h3 className="text-2xl font-bold mb-2">View All Products</h3>
+                            <p className="text-brand-100 mb-6">Explore our complete range of cooling towers and accessories.</p>
+                            <span className="inline-flex items-center font-semibold bg-white text-brand-600 px-6 py-2 rounded-full group-hover:bg-brand-50 transition-colors">
+                                Browse Catalog
+                            </span>
                         </div>
-                        <div className="p-6 flex flex-col grow">
-                            <h3 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-brand-600 transition-colors">
-                                Mini Bottle Type Cooling Tower
-                            </h3>
-                            <p className="text-zinc-600 mb-4 text-sm leading-relaxed grow">
-                                Compact and efficient cooling solution for smaller industrial applications and commercial use.
-                            </p>
-                            <a href="#contact" className="inline-flex items-center text-brand-600 font-semibold text-sm group/link">
-                                Get Specifications <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="mt-16 text-center">
-                    <Link to="/products" className="inline-flex items-center gap-2 px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-lg shadow-brand-900/20 transition-all hover:-translate-y-1">
-                        See More Products <ArrowRight className="w-5 h-5" />
                     </Link>
                 </div>
             </div>
-        </section >
+        </section>
     );
 };
 

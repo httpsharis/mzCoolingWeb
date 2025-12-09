@@ -4,7 +4,7 @@ import Footer from '../components/layout/Footer';
 import { ArrowRight } from 'lucide-react';
 import RactangleCooler from "../assets/ractangularCooler.png";
 import CircularCooler from "../assets/CircularCooler.png";
-import MiniCooler from "../assets/miniCircularTower.png";
+
 import FanImage from "../assets/fan.png";
 import MotorImage from "../assets/mzMotor.png";
 import JunctionImage from "../assets/junction.png";
@@ -27,11 +27,6 @@ const AllProducts = () => {
             title: "Rectangular Cooling Tower",
             desc: "Large capacity cross-flow or counter-flow designs. Perfect for heavy industrial use, power plants, and large HVAC systems.",
             image: RactangleCooler
-        },
-        {
-            title: "Mini Bottle Type Cooling Tower",
-            desc: "Compact and efficient cooling solution for smaller industrial applications and commercial use.",
-            image: MiniCooler
         }
     ];
 
@@ -59,9 +54,9 @@ const AllProducts = () => {
     ];
 
     return (
-        <div className="font-sans text-zinc-600 antialiased selection:bg-brand-500 selection:text-white bg-white">
+        <div className="flex flex-col min-h-screen font-sans text-zinc-600 antialiased selection:bg-brand-500 selection:text-white bg-white">
             <Navbar />
-            <main className="pt-20">
+            <main className="pt-20 grow">
                 {/* Header */}
                 <section className="bg-zinc-900 py-20 text-center">
                     <div className="max-w-7xl mx-auto px-4">

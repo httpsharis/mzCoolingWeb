@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Snowflake, Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import MZLogo from '../../assets/mzLogo.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,37 +25,37 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Products', href: '#products' },
-        { name: 'Services', href: '#services' },
+        { name: 'Home', href: isHome ? '#home' : '/' },
+        { name: 'About', href: isHome ? '#about' : '/#about' },
+        { name: 'Products', href: isHome ? '#products' : '/products' },
+        { name: 'Services', href: isHome ? '#services' : '/#services' },
     ];
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav shadow-md' : 'bg-white/90 backdrop-blur-sm border-b border-transparent'
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav shadow-md py-2' : 'bg-white/90 backdrop-blur-sm border-b border-transparent py-4'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
-                <div className="flex justify-between h-20 items-center">
+                <div className="flex justify-between items-center">
                     {/* Logo */}
-                    <a href="#home" className="shrink-0 flex items-center gap-2 group" aria-label="MZ Cooling Tower Home">
-                        <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
-                            <Snowflake className="w-6 h-6" />
+                    <Link to="/" className="shrink-0 group flex items-center gap-3" aria-label="MZ Cooling Tower Home">
+                        <div className="w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                            <img src={MZLogo} alt="MZ Cooling Tower" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col">
                             <span className="font-display font-bold text-xl text-zinc-900 leading-none tracking-tight">MZ</span>
                             <span className="text-[10px] font-bold text-brand-600 tracking-[0.2em] uppercase">Cooling Tower</span>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex space-x-16 items-center">
+                    <div className="hidden md:flex space-x-12 items-center">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-base font-bold text-zinc-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600"
+                                className="text-sm font-bold text-zinc-900 hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-600 uppercase tracking-wide"
                             >
                                 {link.name}
                             </a>
