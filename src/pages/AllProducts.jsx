@@ -10,6 +10,8 @@ import MotorImage from "../assets/mzMotor.png";
 import JunctionImage from "../assets/junction.png";
 import FilterImage from "../assets/filter.png";
 
+import FillsImage from "../assets/mzFills.png";
+
 const AllProducts = () => {
     // Scroll to top on mount
     useEffect(() => {
@@ -32,9 +34,14 @@ const AllProducts = () => {
 
     const accessories = [
         {
+            title: "Cooling Tower Net",
+            desc: "Durable protective nets to prevent debris accumulation and ensure smooth operation.",
+            image: FilterImage
+        },
+        {
             title: "PVC Fills",
             desc: "High-performance honeycomb PVC fills for maximum heat transfer efficiency.",
-            image: FilterImage
+            image: FillsImage
         },
         {
             title: "Aluminium Fans",
