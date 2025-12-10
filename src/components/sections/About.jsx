@@ -16,8 +16,8 @@ const About = () => {
                                 className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                             />
                         </div>
-                        <div className="absolute -bottom-10 -left-10 w-full h-full border-2 border-brand-100 rounded-3xl -z-0"></div>
-                        <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-50 rounded-full blur-3xl -z-0"></div>
+                        <div className="absolute -bottom-10 -left-10 w-full h-full border-2 border-brand-100 rounded-3xl z-0"></div>
+                        <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-50 rounded-full blur-3xl z-0"></div>
                     </div>
 
                     <div className="order-1 lg:order-2">
@@ -43,7 +43,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 p-4 rounded-xl bg-zinc-50 border border-zinc-100 hover:border-brand-200 transition-colors">
-                                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 flex-shrink-0 mt-1">
+                                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 shrink-0 mt-1">
                                     <Zap className="w-5 h-5" />
                                 </div>
                                 <div>
